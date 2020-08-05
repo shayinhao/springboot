@@ -17,7 +17,12 @@ public class UserController {
 
 
     public String Demo01(String name){
+
+
+        System.out.println("10个亿");
         return name;
+
+
     }
     //查询全部
     @GetMapping ("/")
