@@ -42,14 +42,14 @@ public class UserController {
         return "userEdit";
     }
 
-    //修改
+    //通过id保存数据修改
     @RequestMapping("/update")
     public String updateUser(User user){
         userService.update(user.getId(),user);
         return "redirect:/user/";
     }
 
-    //删除数据
+    //通过id删除数据
     @RequestMapping("/delete/{id}")
     public String delete(@PathVariable(name = "id")Long id){
         userService.delete(id);
