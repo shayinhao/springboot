@@ -14,6 +14,11 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+
+
+    public String Demo01(String name){
+        return name;
+    }
     //查询全部
     @GetMapping ("/")
     public String findAll(Model model){
